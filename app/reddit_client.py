@@ -1,11 +1,18 @@
 from praw import Reddit
+import tomllib
 
 
-client = Reddit(
-    client_id="k8a8tz48Q_B3eK8WDfMkng",
-    client_secret="ZNzO37w4GbIx_S0rBzE2JUOTR9opIw",
-    user_agent="Comment Extraction (by u/JaSamBatak)",
-)
+with open("secrets.toml", "rb") as f:
+    secrets = tomllib.load(f)
+
+    if not secrets.get("reddit"):
+        raise ValueError("Reddit credentials not found in secrets.toml")
+
+    client = Reddit(
+        client_id=secrets["reddit"]["client_id"],
+        client_secret=secrets["reddit"]["client_secret"],
+        user_agent="Comment Extraction (by u/JaSamBatak)",
+    )
 
 client.read_only = True
 

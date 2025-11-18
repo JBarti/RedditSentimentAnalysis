@@ -35,9 +35,9 @@ A powerful web application that analyzes the sentiment of Reddit posts and their
 
 ### Prerequisites
 
-- Python 3.8 or higher
+- Python 3.11. or higher
 - pip package manager
-- Reddit API credentials (already configured in the code)
+- Reddit API credentials (create a Reddit app [here](https://www.reddit.com/prefs/apps))
 
 ### Setup
 
@@ -181,23 +181,6 @@ The application converts emojis to their textual representations to improve sent
 
 Comments are organized by depth (0 = top-level, 1 = reply to top-level, etc.) allowing for thread-specific analysis.
 
-## 🤝 Contributing
-
-Contributions are welcome! Here's how you can help:
-
-1. **Fork the repository**
-2. **Create a feature branch**: `git checkout -b feature/amazing-feature`
-3. **Commit your changes**: `git commit -m 'Add amazing feature'`
-4. **Push to the branch**: `git push origin feature/amazing-feature`
-5. **Open a Pull Request**
-
-### Development Guidelines
-
-- Follow PEP 8 style guidelines
-- Add comments for complex logic
-- Test your changes with various Reddit posts
-- Update documentation as needed
-
 ## 📄 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
@@ -206,9 +189,8 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 **Josip Bartulović**
 
-- LinkedIn: [Josip Bartulović](https://www.linkedin.com/in/josip-bartulovic/)
+- LinkedIn: [Josip Bartulović](https://www.linkedin.com/in/josip-bartulovi%C4%87-2737b5184/)
 - Email: josip.bartulovic3@gmail.com
-- Reddit: u/JaSamBatak
 
 ### About the Developer
 
@@ -231,16 +213,6 @@ I help businesses streamline their data processes, automate repetitive tasks, an
 - **Academic Research**: Study emotional patterns in online discussions
 - **Brand Monitoring**: Track sentiment around your brand on Reddit
 
-## 🚧 Future Enhancements
-
-- [ ] User authentication for personal Reddit access
-- [ ] Export analysis results to CSV/JSON
-- [ ] Historical sentiment tracking over time
-- [ ] Multi-post comparison
-- [ ] Customizable sentiment models
-- [ ] API endpoint for programmatic access
-- [ ] Subreddit-level analysis
-
 ---
 
-Made with ❤️ by [Josip Bartulović](https://www.linkedin.com/in/josip-bartulovic/)
+Made by [Josip Bartulović](https://www.linkedin.com/in/josip-bartulovi%C4%87-2737b5184/)
