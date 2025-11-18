@@ -136,21 +136,21 @@ RedditSentimentAnalysis/
 ├── example_sentiment_analysis.json   # Pre-loaded example data
 ├── requirements.txt                  # Python dependencies
 ├── .gitignore                        # Git ignore rules
-└── README.md                         # This file
+├── README.md                         # This file
+└── secrets.toml                      # Reddit app secrets
 ```
 
 ## ⚙️ Configuration
 
 ### Reddit API Credentials
 
-The Reddit client is configured with read-only access. Credentials are embedded in `app/reddit_client.py`:
+The Reddit client is configured with read-only access. Credentials need to be set in the `secrets.toml` file:
 
-```python
-client = Reddit(
-    client_id="k8a8tz48Q_B3eK8WDfMkng",
-    client_secret="ZNzO37w4GbIx_S0rBzE2JUOTR9opIw",
-    user_agent="Comment Extraction (by u/JaSamBatak)",
-)
+```toml
+[reddit]
+client_id="..."
+client_secret="..."
+
 ```
 
 **Note**: These are read-only credentials. For production use, consider using environment variables.
@@ -158,17 +158,6 @@ client = Reddit(
 ### Sentiment Model Configuration
 
 The sentiment classifier uses the `j-hartmann/emotion-english-distilroberta-base` model. On first run, it will be downloaded automatically from Hugging Face (approximately 300MB).
-
-### Streamlit Secrets
-
-For sensitive configurations, create `.streamlit/secrets.toml` (already in `.gitignore`):
-
-```toml
-[reddit]
-client_id = "your_client_id"
-client_secret = "your_client_secret"
-user_agent = "your_user_agent"
-```
 
 ## 🔍 How It Works
 
