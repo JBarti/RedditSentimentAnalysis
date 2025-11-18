@@ -2,7 +2,7 @@
 
 A powerful web application that analyzes the sentiment of Reddit posts and their comments using state-of-the-art natural language processing. Built with Streamlit and powered by Hugging Face transformers, this tool provides comprehensive emotional analysis and interactive visualizations.
 
-![Python](https://img.shields.io/badge/python-3.8+-blue.svg)
+![Python](https://img.shields.io/badge/python-3.11+-blue.svg)
 ![Streamlit](https://img.shields.io/badge/streamlit-1.50.0-red.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 
