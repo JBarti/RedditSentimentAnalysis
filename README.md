@@ -1,3 +1,8 @@
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/e09df743-643a-414c-8f3b-d355fcbab7cb" />
+</p>
+
 # Reddit Sentiment Analysis Dashboard
 
 A powerful web application that analyzes the sentiment of Reddit posts and their comments using state-of-the-art natural language processing. Built with Streamlit and powered by Hugging Face transformers, this tool provides comprehensive emotional analysis and interactive visualizations.
