@@ -1,7 +1,4 @@
-
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/e09df743-643a-414c-8f3b-d355fcbab7cb" />
-</p>
+https://github.com/user-attachments/assets/e09df743-643a-414c-8f3b-d355fcbab7cb
 
 # Reddit Sentiment Analysis Dashboard
 
